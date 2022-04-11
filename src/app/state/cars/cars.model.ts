@@ -4,9 +4,10 @@ export class CarsStateModel {
 }
 
 export interface Car{
+  id?: any;
   photo: string;
   model: string;
-  year: string;
+  year: any;
   brand: string;
-  price: string;
+  price: any;
 }

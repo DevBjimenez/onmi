@@ -3,26 +3,34 @@
         {
             "id": 1,
             "brand": "jeep",
-            "year": 2010,
+            "year": "2010",
+            "model": "test",
+            "price": 45,
             "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jeep-wrangler-4xe-059-1626103907.jpg?crop=0.651xw:0.551xh;0.184xw,0.316xh&resize=480:*"
         },
         {
             "id": 2,
             "brand": "toyota",
-            "year": 2018,
-            "photo": "https://acnews.blob.core.windows.net/imgnews/medium/NAZ_b9e378b9d2d847308e997c9e33a45f08.jpg"
+            "year": "2018",
+            "photo": "https://acnews.blob.core.windows.net/imgnews/medium/NAZ_b9e378b9d2d847308e997c9e33a45f08.jpg",
+            "model": "test",
+            "price": 45
         },
         {
             "id": 3,
             "brand": "ford",
             "year": 2021,
+            "model": "test",
+            "price": 45,
             "photo": "https://www.megautos.com/wp-content/uploads/2020/07/Bronco-4-puertas-adelante-1024x669.jpg"
         },
         {
             "id": 4,
             "brand": "gmc",
             "year": 2010,
-            "photo": "https://i1.wp.com/geeksroom.com/wp-content/uploads/2021/04/2024-GMC-HUMMER-EV-SUV-3.jpg?resize=680%2C393&ssl=1"
+            "photo": "https://i1.wp.com/geeksroom.com/wp-content/uploads/2021/04/2024-GMC-HUMMER-EV-SUV-3.jpg?resize=680%2C393&ssl=1",
+            "model": "test",
+            "price": 45
         }
     ],
     "brands": [

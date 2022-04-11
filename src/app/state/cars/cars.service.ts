@@ -1,22 +1,32 @@
 import { Injectable } from '@angular/core';
-import {delay, Observable} from "rxjs";
-import {Car} from "./cars.model";
-import {environment} from "../../../environments/environment";
-import {HttpClient} from "@angular/common/http";
-
+import { delay, map, Observable } from 'rxjs';
+import { Car } from './cars.model';
+import { HttpClient } from '@angular/common/http';
+// import * as jsonURL from '';
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class CarsService {
+    constructor(private http: HttpClient) {}
+    // cars = jsonURL.cars;
 
-  constructor(private http: HttpClient) { }
+    /**
+     * @description send request to get all cars
+     */
+    get(): Observable<Car[]> {
+        //     console.log(this.cars);
+        //     return new Observable<Car[]>((observer) => {
+        //         observer.next(this.cars as Car[]);
+        //     });
+        // }
 
-  /**
-   * @description send request to get all cars
-   */
-  get():Observable<Car[]>{
-    return this.http.get<Car[]>(`${environment.api}cars`).pipe(
-      delay(3000)
-    )
-  }
+        console.log('./assets/db.json');
+        // @ts-ignore
+        return this.http.get('./assets/db.json').pipe(
+            delay(2000),
+            map(({ cars }: any) => {
+                return cars;
+            })
+        );
+    }
 }
